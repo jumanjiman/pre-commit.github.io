@@ -1601,7 +1601,7 @@
             "description": "Format files with ClangFormat.",
             "entry": "clang-format -i",
             "language": "system",
-            "files": "\\.(c|cc|cxx|cpp|frag|glsl|h|hpp|hxx|ih|ispc|ipp|java|js|m|mm|proto|vert)$",
+            "files": "\\.(c|cc|cxx|cpp|frag|glsl|h|hpp|hxx|ih|ispc|ipp|java|js|m|mm|proto|textproto|vert)$",
             "args": [
                 "-fallback-style=none"
             ]
@@ -1657,10 +1657,12 @@
         {
             "id": "fmt",
             "name": "fmt",
-            "description": "Format files with rustfmt.",
-            "entry": "rustfmt --",
+            "description": "Format files with cargo fmt.",
+            "entry": "cargo fmt --",
             "language": "system",
-            "files": "\\.rs$",
+            "types": [
+                "rust"
+            ],
             "args": []
         },
         {
@@ -1669,7 +1671,9 @@
             "description": "Check the package for errors.",
             "entry": "cargo check",
             "language": "system",
-            "files": "\\.rs$",
+            "types": [
+                "rust"
+            ],
             "pass_filenames": false
         },
         {
@@ -1678,7 +1682,9 @@
             "description": "Lint rust sources",
             "entry": "cargo clippy -- -D warnings",
             "language": "system",
-            "files": "\\.rs$",
+            "types": [
+                "rust"
+            ],
             "pass_filenames": false
         }
     ],
