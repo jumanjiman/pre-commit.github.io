@@ -1870,8 +1870,7 @@
             "pass_filenames": true,
             "types": [
                 "ruby"
-            ],
-            "verbose": true
+            ]
         },
         {
             "id": "rspec",
@@ -1882,8 +1881,7 @@
             "pass_filenames": true,
             "types": [
                 "ruby"
-            ],
-            "verbose": true
+            ]
         },
         {
             "id": "foodcritic",
@@ -1896,8 +1894,7 @@
                 "file"
             ],
             "files": "(?x)^(\n    .*/(recipes|attributes|resources|providers)/.*\\.rb|\n    .*/metadata\\.rb\n)$\n",
-            "exclude": ".*/test/.*\\.rb$",
-            "verbose": true
+            "exclude": ".*/test/.*\\.rb$"
         },
         {
             "id": "cookstyle",
@@ -1909,7 +1906,6 @@
             "types": [
                 "ruby"
             ],
-            "verbose": true,
             "require_serial": true
         },
         {
@@ -1921,8 +1917,7 @@
             "pass_filenames": true,
             "types": [
                 "file"
-            ],
-            "verbose": true
+            ]
         }
     ],
     "https://github.com/mattlqx/pre-commit-sign": [
@@ -1984,7 +1979,7 @@
             "description": "Commitlint hook",
             "language": "node",
             "entry": "commitlint --edit",
-            "verbose": true
+            "verbose": false
         }
     ],
     "https://github.com/henryykt/pre-commit-perl": [
