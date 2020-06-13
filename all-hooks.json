@@ -3435,7 +3435,6 @@
             "exclude": "\\.terraform\\/.*$",
             "always_run": false,
             "pass_filenames": false,
-            "verbose": true,
             "additional_dependencies": [
                 "checkov"
             ]
@@ -3450,8 +3449,7 @@
             "files": "(\\.tf)$",
             "exclude": "\\.terraform\\/.*$",
             "always_run": false,
-            "pass_filenames": false,
-            "verbose": true
+            "pass_filenames": false
         }
     ],
     "https://github.com/lietu/go-pre-commit": [
