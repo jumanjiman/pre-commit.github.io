@@ -2884,7 +2884,6 @@
             "language": "python",
             "language_version": "python3.7",
             "require_serial": true,
-            "verbose": true,
             "types": [
                 "python"
             ]
