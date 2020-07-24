@@ -995,7 +995,7 @@
             "entry": "forbid_tabs",
             "language": "python",
             "files": "",
-            "exclude": "(Makefile|debian/rules)(\\.in)?$"
+            "exclude": "(Makefile|debian/rules|.gitmodules)(\\.in)?$"
         },
         {
             "id": "remove-tabs",
@@ -1008,7 +1008,7 @@
                 "4"
             ],
             "files": "",
-            "exclude": "(Makefile|debian/rules)(\\.in)?$"
+            "exclude": "(Makefile|debian/rules|.gitmodules)(\\.in)?$"
         },
         {
             "id": "insert-license",
