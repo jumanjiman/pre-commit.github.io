@@ -371,7 +371,7 @@
             "args": [],
             "require_serial": false,
             "additional_dependencies": [
-                "eslint@7.6.0"
+                "eslint@7.7.0"
             ]
         }
     ],
@@ -549,6 +549,16 @@
             "name": "rst ``code`` is two backticks",
             "description": "Detect common mistake of using single backticks when writing rst",
             "entry": "(^| )`[^`]+`([^_]|$)",
+            "language": "pygrep",
+            "types": [
+                "rst"
+            ]
+        },
+        {
+            "id": "rst-inline-touching-normal",
+            "name": "rst ``inline code`` next to normal text",
+            "description": "Detect mistake of inline code touching normal text in rst",
+            "entry": "\\w``\\w",
             "language": "pygrep",
             "types": [
                 "rst"
